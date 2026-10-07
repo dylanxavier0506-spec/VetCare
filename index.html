@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VetCare – Clínica veterinaria moderna. Cuidamos a tus mascotas con amor y profesionalismo." />
+  <title>VetCare – Clínica Veterinaria</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+<nav class="navbar" role="navigation" aria-label="Menú principal">
+  <div class="nav-container">
+    <!-- Logo -->
+    <a href="#inicio" class="logo" aria-label="VetCare inicio">
+      <div class="logo-icon" aria-hidden="true">🐾</div>
+      <span>VetCare</span>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="nav-links" role="menubar">
+      <a href="#inicio"       role="menuitem">Inicio</a>
+      <a href="#servicios"    role="menuitem">Servicios</a>
+      <a href="#mascotas"     role="menuitem">Mascotas</a>
+      <a href="#veterinarios" role="menuitem">Veterinarios</a>
+      <a href="#citas"        role="menuitem">Citas</a>
+      <a href="#testimonios"  role="menuitem">Testimonios</a>
+      <a href="#citas" class="nav-cta btn" role="menuitem">📅 Agendar Cita</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="nav-mobile" role="navigation" aria-label="Menú móvil">
+  <a href="#inicio">🏠 Inicio</a>
+  <a href="#servicios">🩺 Servicios</a>
+  <a href="#mascotas">🐾 Mascotas</a>
+  <a href="#veterinarios">👨‍⚕️ Veterinarios</a>
+  <a href="#citas">📋 Citas</a>
+  <a href="#testimonios">⭐ Testimonios</a>
+  <a href="#citas" class="nav-cta">📅 Agendar Cita</a>
+</div>
+
+<!-- =====================================================
+     HERO / INICIO
+     ===================================================== -->
+<section id="inicio" aria-label="Presentación de VetCare">
+  <div class="hero">
+    <div class="hero-inner">
+      <!-- Copy -->
+      <div class="hero-copy">
+        <span class="hero-badge">🐾 Clínica Veterinaria</span>
+        <h1>El mejor cuidado para tus <span>mascotas</span></h1>
+        <p>
+          En VetCare combinamos tecnología avanzada con atención cálida y personalizada.
+          Médicos especializados, instalaciones modernas y amor genuino por los animales.
+        </p>
+        <div class="hero-actions">
+          <a href="#citas"     class="btn btn-primary btn-lg">📅 Agendar Cita</a>
+          <a href="#servicios" class="btn btn-outline btn-lg">Ver Servicios</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="2400" data-suffix="+">0+</div>
+            <div class="stat-label">Mascotas atendidas</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="15" data-suffix="">0</div>
+            <div class="stat-label">Años de experiencia</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="4" data-suffix="">0</div>
+            <div class="stat-label">Veterinarios expertos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="98" data-suffix="%">0%</div>
+            <div class="stat-label">Satisfacción</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual card -->
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="floating-badge">✨ Atención 24/7</div>
+          <div class="hero-card-emoji">🐕‍🦺</div>
+          <div class="hero-card-title">Cuidado Profesional</div>
+          <div class="hero-card-sub">Tu mascota merece lo mejor — nosotros lo garantizamos.</div>
+          <div class="mini-features">
+            <div class="mini-feat"><span class="fi">🩺</span> Diagnósticos precisos y seguros</div>
+            <div class="mini-feat"><span class="fi">💉</span> Vacunas y medicina preventiva</div>
+            <div class="mini-feat"><span class="fi">🏠</span> Hospitalización confortable</div>
+            <div class="mini-feat"><span class="fi">📱</span> Recordatorios de citas por app</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     SERVICIOS
+     ===================================================== -->
+<section id="servicios" aria-label="Servicios veterinarios">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nuestros Servicios</span>
+      <h2 class="section-title">Todo lo que tu mascota necesita</h2>
+      <p class="section-sub">
+        Ofrecemos una amplia gama de servicios veterinarios para mantener a tu compañero
+        saludable y feliz en cada etapa de su vida.
+      </p>
+    </div>
+    <div class="services-grid" id="services-grid" role="list" aria-label="Lista de servicios"></div>
+  </div>
+</section>
+
+<!-- =====================================================
+     MASCOTAS
+     ===================================================== -->
+<section id="mascotas" aria-label="Mascotas registradas">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nuestras Mascotas</span>
+      <h2 class="section-title">Pacientes registrados</h2>
+      <p class="section-sub">
+        Conoce a los adorables pacientes que forman parte de la familia VetCare.
+        Busca por nombre, raza o propietario.
+      </p>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="pets-toolbar">
+      <div class="search-box" role="search">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" id="pet-search" placeholder="Buscar mascota, raza o propietario…" aria-label="Buscar mascota" />
+      </div>
+      <div class="filter-btns" role="group" aria-label="Filtrar por especie">
+        <button class="filter-btn active" data-filter="Todos">🐾 Todos</button>
+        <button class="filter-btn" data-filter="Perro">🐕 Perros</button>
+        <button class="filter-btn" data-filter="Gato">🐈 Gatos</button>
+        <button class="filter-btn" data-filter="Ave">🦜 Aves</button>
+      </div>
+    </div>
+
+    <div class="pets-grid" id="pets-grid" role="list" aria-label="Tarjetas de mascotas"></div>
+  </div>
+</section>
+
+<!-- =====================================================
+     VETERINARIOS
+     ===================================================== -->
+<section id="veterinarios" aria-label="Nuestros veterinarios">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">El Equipo</span>
+      <h2 class="section-title">Veterinarios expertos</h2>
+      <p class="section-sub">
+        Nuestro equipo está formado por profesionales apasionados, con certificaciones
+        especializadas y años de experiencia en el cuidado animal.
+      </p>
+    </div>
+    <div class="vets-grid" id="vets-grid" role="list" aria-label="Tarjetas de veterinarios"></div>
+  </div>
+</section>
+
+<!-- =====================================================
+     CITAS
+     ===================================================== -->
+<section id="citas" aria-label="Gestión de citas">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Citas</span>
+      <h2 class="section-title">Agenda y consulta citas</h2>
+      <p class="section-sub">
+        Registra una nueva cita para tu mascota o consulta el estado de las citas existentes.
+        Proceso rápido y sencillo.
+      </p>
+    </div>
+
+    <div class="appointments-layout">
+
+      <!-- Form -->
+      <div class="appt-form-card">
+        <div class="form-title">📅 Nueva Cita</div>
+        <form id="appt-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-pet">Nombre de la mascota *</label>
+              <input type="text" id="appt-pet" placeholder="Ej. Max" required />
+            </div>
+            <div class="form-group">
+              <label for="appt-owner">Propietario *</label>
+              <input type="text" id="appt-owner" placeholder="Tu nombre" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appt-service">Servicio requerido *</label>
+            <select id="appt-service" required>
+              <option value="">— Seleccionar servicio —</option>
+              <option>Consulta General</option>
+              <option>Vacunación</option>
+              <option>Laboratorio</option>
+              <option>Cirugía</option>
+              <option>Odontología</option>
+              <option>Grooming</option>
+              <option>Radiografías</option>
+              <option>Hospitalización</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vet-select">Veterinario *</label>
+            <select id="vet-select" required>
+              <option value="">— Seleccionar veterinario —</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appt-date">Fecha *</label>
+              <input type="date" id="appt-date" required />
+            </div>
+            <div class="form-group">
+              <label for="appt-time">Hora *</label>
+              <input type="time" id="appt-time" min="08:00" max="20:00" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="appt-notes">Notas adicionales</label>
+            <textarea id="appt-notes" placeholder="Síntomas, antecedentes, observaciones…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+            📅 Registrar Cita
+          </button>
+        </form>
+      </div>
+
+      <!-- Appointments list -->
+      <div class="appt-list-card">
+        <div class="form-title">📋 Citas Registradas</div>
+        <div class="appt-filters" role="group" aria-label="Filtrar citas">
+          <button class="appt-filter active" data-filter="all">📋 Todas</button>
+          <button class="appt-filter" data-filter="confirmed">✅ Confirmadas</button>
+          <button class="appt-filter" data-filter="pending">⏳ Pendientes</button>
+          <button class="appt-filter" data-filter="completed">✔️ Completadas</button>
+        </div>
+        <div class="appt-list" id="appt-list" role="list" aria-label="Lista de citas"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     TESTIMONIOS
+     ===================================================== -->
+<section id="testimonios" aria-label="Testimonios de clientes">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Testimonios</span>
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <p class="section-sub">
+        La satisfacción de nuestros clientes y sus mascotas es nuestra mayor recompensa.
+        Esto es lo que opinan sobre nuestro servicio.
+      </p>
+    </div>
+    <div class="testimonials-grid" id="testimonials-grid" role="list" aria-label="Testimonios"></div>
+  </div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+<footer aria-label="Pie de página">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🐾</div>
+          <span>VetCare</span>
+        </div>
+        <p>
+          Clínica veterinaria con más de 15 años brindando atención médica de calidad.
+          Cuidamos a tu mascota como si fuera la nuestra.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-col">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#mascotas">Mascotas</a></li>
+          <li><a href="#veterinarios">Veterinarios</a></li>
+          <li><a href="#citas">Citas</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Consulta General</a></li>
+          <li><a href="#servicios">Vacunación</a></li>
+          <li><a href="#servicios">Laboratorio</a></li>
+          <li><a href="#servicios">Cirugía</a></li>
+          <li><a href="#servicios">Grooming</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Contacto</h4>
+        <p><span class="fi">📍</span> Av. Reforma 1234, Col. Centro, CDMX</p>
+        <p><span class="fi">📞</span> +52 55 1234-5678</p>
+        <p><span class="fi">📧</span> hola@vetcare.mx</p>
+        <p><span class="fi">🕐</span> Lun–Vie 8:00–20:00 · Sáb 9:00–17:00</p>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <span>© 2026 VetCare. Todos los derechos reservados.</span>
+      <div class="footer-socials" aria-label="Redes sociales">
+        <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+        <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+        <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+        <a href="#" class="social-btn" aria-label="Twitter/X">🐦</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================
+     PET MODAL
+     ===================================================== -->
+<div class="modal-overlay hidden" id="pet-modal" role="dialog" aria-modal="true" aria-label="Detalle de mascota">
+  <div class="modal">
+    <button class="modal-close" onclick="closePetModal()" aria-label="Cerrar">✕</button>
+    <div id="pet-modal-content"></div>
+  </div>
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" aria-label="Volver arriba">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
